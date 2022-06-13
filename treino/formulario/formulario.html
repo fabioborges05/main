@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Contato</h1>
+
+     <form action="#" method="post">
+         <fieldset>
+             <legend>Dados pessoais</legend>
+             <div>
+                 <label for="nome" class="obrigatorio">Nome*</label>
+                 <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+             </div>
+             <div>
+                 <label for="email" class="obrigatorio">E-mail*</label>
+                 <input type="email" name="email" id="email" placeholder="exemple@gmail.com" required>
+             </div>
+         </fieldset>
+
+         <div>
+             <label for="assunto">Assunto</label>
+             <select name="assunto" id="assunto">
+                 <option value="selected"></option>
+                 <option value="reclamacao">Reclamação</option>
+                 <option value="sugestao">Sugestão</option>
+                 <option value="elogio">Elogio</option>
+                 <option value="outro">Outro</option>
+             </select>
+         </div>
+
+         <div>
+             <label for="mensagem" class="obrigatorio">Mensagem*</label>
+             <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" required></textarea>
+         </div>
+
+         <div  class="cadastro">
+             <input type="checkbox" name="cadastro" id="cadastro">
+             <label for="cadastro">Desejo receber E-mails informativos</label>
+         </div>
+         <div  class="cadastro">
+             <input type="submit" value="Enviar Mensagem">
+         </div>
+
+
+     </form>
+</body>
+</html>

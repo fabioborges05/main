@@ -2,6 +2,10 @@
     main .container-main div{
         margin: auto;
     }
+
+    .content h3{
+        text-align: center;
+    }
     main .container-main img{
         display: none;
     }

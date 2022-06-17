@@ -15,6 +15,18 @@
             position: absolute;
             right: 100px;
         }
+
+        ul li.naoRealizada {
+            list-style-type: '☐';
+            cursor: pointer;
+            text-indent: 10px;
+
+        }
+        ul li.realizada {
+            list-style-type: '☑';
+            text-indent: 10px;
+            text-decoration: line-through;
+        }
     </style>
 </head>
 <body>
@@ -23,6 +35,13 @@
     <div>
         <input type="text" id="caixaDeTexto" placeholder="Tarefa">
         <button id="botaoAdicionar" class="adicionar">✚</button>
+
+        <select name="" id="listaSuspensa" hidden>
+            <option value="">Selecione uma opção</option>
+            <option value="">Marcar todas as opções</option>
+            <option value="">Desmarcar todas as opções</option>
+            <option value="">Limpar lista de tarefas</option>
+        </select>
     </div>
 
     <ul id="listaDeTarefas">
